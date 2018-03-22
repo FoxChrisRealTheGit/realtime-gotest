@@ -1,9 +1,10 @@
 package main
 
 import (
-	r "github.com/dancannon/gorethink"
-	"github.com/gorilla/websocket"
 	"log"
+
+	r "github.com/dancannon/gorethink"
+	"github.com/mitchellh/mapstructure"
 )
 
 type FindHandler func(string) (Handler, bool)
